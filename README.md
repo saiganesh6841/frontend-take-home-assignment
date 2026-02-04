@@ -135,6 +135,12 @@ Widget reads from localStorage and re-fetches data
 
 Data persists across page reloads
 
+### Shopify Metaobject Rendering – Demo Video
+
+The following video demonstrates the product page rendering the metaobject-based product information section, including conditional rendering and graceful handling of missing data.
+
+▶️ [Watch Demo Video](https://github.com/saiganesh6841/frontend-take-home-assignment/blob/main/freecompress-react_task%20and%2013%20more%20pages%20-%20Personal%20-%20Microsoft_%20Edge%202026-02-04%2020-46-54.mp4)
+
 # Question 2 — Shopify Liquid
 ## Metaobject Reference Rendering (Product Page)
 
