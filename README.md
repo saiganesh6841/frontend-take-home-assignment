@@ -236,6 +236,11 @@ Related products section hides when empty
 
 No layout break or Liquid errors
 
+### Shopify Admin Setup Screenshots
+
+<img src="Screenshot 2026-02-04 203846.png" width="800" />
+<img src="Screenshot 2026-02-04 204226.png" width="800" />
+
 ### Extra Notes
 
 Shopify task is intentionally separate from React app
