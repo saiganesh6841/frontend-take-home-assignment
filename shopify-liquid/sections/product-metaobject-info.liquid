@@ -1,0 +1,41 @@
+{% if product.metafields.custom.product_info %}
+  {% assign info = product.metafields.custom.product_info.value %}
+
+  <section class="product-metaobject-info">
+
+    {% if info.image %}
+      <img
+        src="{{ info.image | image_url: width: 600 }}"
+        alt="{{ info.title | escape }}"
+      >
+    {% endif %}
+
+    {% if info.title %}
+      <h2>{{ info.title }}</h2>
+    {% endif %}
+
+    {% if info.description %}
+      <p>{{ info.description | newline_to_br }}</p>
+    {% endif %}
+
+    {% if info.related_products and info.related_products.value.size > 0 %}
+      <h3>Related Products</h3>
+      <ul>
+        {% for related_product in info.related_products.value %}
+          <li>
+            {% if related_product.featured_image %}
+              <img
+                src="{{ related_product.featured_image | image_url: width: 300 }}"
+                alt="{{ related_product.title | escape }}"
+              >
+            {% endif %}
+            <p>{{ related_product.title }}</p>
+            <p>{{ related_product.price | money }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+  </section>
+{% endif %}
+
